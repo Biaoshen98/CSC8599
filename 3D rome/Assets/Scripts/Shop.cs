@@ -10,6 +10,7 @@ public class Shop : MonoBehaviour
     public Text textBox1;
     public Text textBox4;
     public Text boxText;
+    public Text coinText;
     private bool playerNpc= false;
     public PickUp GetBox;
     // Start is called before the first frame update
@@ -37,7 +38,8 @@ public class Shop : MonoBehaviour
             else{
                 textBox1.text = "Food not enough!!!";
             }
-            boxText.text = "Box: " + GetBox.box + " Coin: " + coin;
+            boxText.text = "Number: " + GetBox.box;
+            coinText.text = "Number: " + coin;
         }
         if(playerNpc != true){
             textBox1.text = " ";

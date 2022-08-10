@@ -34,6 +34,6 @@ public class PickUp : MonoBehaviour
             box++;
             Debug.Log("Box: " + box);
         }
-        boxText.text = "Box: " + box;
+        boxText.text = "Number: " + box;
     }
 }

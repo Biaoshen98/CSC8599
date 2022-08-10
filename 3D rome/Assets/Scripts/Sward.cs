@@ -6,6 +6,10 @@ public class Sward : MonoBehaviour
 {
      Animator anim;
      int theAttackEdID;
+    public EnemyHealth healthBar2;
+
+    public float hurt = 250F;
+    public float heal = 1000F;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +25,13 @@ public class Sward : MonoBehaviour
     void OnTriggerEnter(Collider collision){
         if(collision.gameObject.name == "Sward"){
             Debug.Log("1");
+            Hurt();
             bool isAttackEd = anim.GetBool("Death");
             anim.SetBool(theAttackEdID,true);
             Destroy(gameObject,5f);
         }
+    }
+    public void Hurt() {
+        healthBar2.Hurt(hurt);
     }
 }

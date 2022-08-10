@@ -24,7 +24,7 @@ public class GuideBook : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.V)&&playerNpc == true){
             dialogueBox.SetActive(true);
-            textBox1.text = "Guide Book:\nYou can use WASD to move!\nPress left mouth to attack!";
+            textBox1.text = "Guide Book:\nYou can use WASD to move!\nPress left mouth to attack!\nPress ESC pause the game!";
             textBox4.text = " ";
         }
         if(playerNpc != true){
