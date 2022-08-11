@@ -374,6 +374,7 @@
 "Assets/Scripts/StartGame.cs"
 "Assets/Scripts/SunandMoon.cs"
 "Assets/Scripts/Sward.cs"
+"Assets/Scripts/Tab.cs"
 "Assets/Scripts/Task.cs"
 "Assets/Scripts/WinGoMenu.cs"
 -langversion:9.0

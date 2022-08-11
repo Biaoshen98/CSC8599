@@ -22,7 +22,7 @@ public class GetVolumeValue : MonoBehaviour
     public void UpdateGameObjectValue(){
         Scene activeScene = SceneManager.GetActiveScene();
         if(activeScene.name == "MainMenu"){
-            GameObject audioSlider = GameObject.FindGameObjectWithTag("UI").transform.GetChild(6).gameObject;
+            GameObject audioSlider = GameObject.FindGameObjectWithTag("UI").transform.GetChild(5).gameObject;
             PlayerPrefs.SetFloat("audioVolume", audioSlider.GetComponent<Slider>().value);
             print(PlayerPrefs.GetFloat("audioVolume"));
         }

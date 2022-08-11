@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
         // slider.transform.LookAt(Camera.main.transform.position);
 
         slider.direction = Slider.Direction.LeftToRight;
-        slider.transform.rotation = Camera.main.transform.rotation;
+        //slider.transform.rotation = Camera.main.transform.rotation;
     }
 
     public void Hurt(float h) {
